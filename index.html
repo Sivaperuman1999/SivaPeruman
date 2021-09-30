@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sivaperuman</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="Sam.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Texturina&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <style>
+  		#center {
+  			position: absolute;
+  			top: 0;
+  			bottom: 0;
+  			left: 0;
+  			right: 0;
+  			margin: auto;
+  		}
+
+      .text-load {
+        position: absolute;
+        bottom: -5px;
+        left: -70px;
+      }
+
+      .loader{
+          width: 80px;
+          height: 67px;
+          margin: auto;
+          position: relative;
+      }
+      .loader .square{
+          background: #009dff;
+          width: 50px;
+          height: 50px;
+          margin: 0 auto;
+          border-radius: 4px;
+        animation-fill-mode: both;
+          animation: motion 2.5s infinite cubic-bezier(0.89, 0.03, 0.06, 1.5);
+      }
+      .loader .path{
+          height: 10px;
+          width: 110px;
+          overflow: hidden;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+      }
+      .loader .path > div{
+          background: #444;
+          width: 10px;
+          height: 10px;
+          border-radius: 2px;
+          margin: 0 15px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          animation-fill-mode: both;
+          animation: dynamic 5s infinite cubic-bezier(0.89, 0.03, 0.06, 1.5);
+      }
+      .loader .path > div:nth-child(1){ left: 40px; }
+      .loader .path > div:nth-child(2){ left: 80px; }
+      .loader .path > div:nth-child(3){ left: 120px; }
+      .loader .path > div:nth-child(4){ left: 160px; }
+      .loader .path > div:nth-child(5){ left: 200px; }
+      .loader .path > div:nth-child(6){ left: 240px; }
+      .loader .path > div:nth-child(7){ left: 280px; }
+      @keyframes motion{
+          50%{ transform: rotate(90deg); }
+          100%{ transform: rotate(180deg); }
+      }
+      @keyframes dynamic{
+          0%{ transform: translateX(-40px); }
+          25%{ transform: translateX(-80px); }
+          50%{ transform: translateX(-120px); }
+          75%{ transform: translateX(-160px); }
+          100%{ transform: translateX(-200px); }
+      }
+
+  	</style>
+</head>
+<body>
+
+  <div class="loader" id="center">
+    <div class="square"></div>
+    <div class="path">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  <p class="text-load">Loading</p>
+</div>
+
+<nav class="navbar navbar-fixed-top" >
+  <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-right" id="text">
+      <li><a class="left" href="#height">Home</a></li>
+      <li><a class="left" href="#about">About Me</a></li>
+      <li><a class="left" href="#skills">Skills</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="jumbotron" id="height">
+    <h1 class="style">Hi, I am Sivaperuman</h1>
+    <h2 class="welcome">Welcome to My Website</h2>
+  </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="quote">
+  <h2 class="quote">" Anything Worthwhile in life is gonna require some <i><b> Effort </b></i>  and <i> <b>Work </b></i>"</h2>
+</div>
+
+<div class="container-fluid" id="about">
+  <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12" id="aboutl">
+        <h2 class="aboutme">I am Sivaperuman, I am Studying B.E Computer Science and will be Graduated in a year. My hobby is to finding new concepts to Code. I Hate to quit a task in the Middle. Whatever task given to me I give my Best to present it Perfectly. Everything is Possible I don't like to limit myself.</h2>
+        <br><br><br><br><br><br><br>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="process-wrapper">
+          <div id="progress-bar-container">
+          	<ul>
+          		<li class="step step01 active"><div class="step-inner">1999</div></li>
+          		<li class="step step02"><div class="step-inner">2007</div></li>
+          		<li class="step step03"><div class="step-inner">2016</div></li>
+          		<li class="step step04"><div class="step-inner">2018</div></li>
+          		<li class="step step05"><div class="step-inner">2022</div></li>
+          	</ul>
+
+          	<div id="line">
+          		<div id="line-progress"></div>
+          	</div>
+          </div>
+
+          <div id="progress-content-section">
+          	<div class="section-content discovery active">
+          		<h2>BORN</h2>
+          	</div>
+
+          	<div class="section-content strategy">
+          		<h2>1st GRADE</h2>
+          	</div>
+
+          	<div class="section-content creative">
+          		<h2>10th GRADE</h2>
+          	</div>
+
+          	<div class="section-content production">
+          		<h2>12th GRADE</h2>
+          	</div>
+
+          	<div class="section-content analysis">
+          		<h2>B.E Computer Science</h2>
+          	</div>
+          	</div>
+
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+</div>
+
+<div class="container-fluid" id="quote">
+  <h2 class="quote">" God has a <i>Purpose</i> for your pain, a <i>reason</i> for your struggle and a <i>reward</i> for your faithfulness <i>Trust Him</i> and don't give up "</h2>
+</div>
+
+<div class="container-fluid" id="skills">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12" id="skillshead">
+      <h1 class="texts">Skills</h1>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3"  id="skillspace"></div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6" id="skillspace">
+
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="50"></div>
+        </div>
+      </div>
+
+
+      <div class="skill">
+        <div class="skill-name">C</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">JAVASCRIPT</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="50"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3"  id="skillspace"></div>
+  </div>
+</div>
+
+<script>
+
+   $(".step").click( function() {
+ $(this).addClass("active").prevAll().addClass("active");
+ $(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+ $("#line-progress").css("width", "3%");
+ $(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+ $("#line-progress").css("width", "25%");
+ $(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+ $("#line-progress").css("width", "50%");
+ $(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+ $("#line-progress").css("width", "75%");
+ $(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+ $("#line-progress").css("width", "100%");
+ $(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+$('.skill-per').each(function(){
+  var $this = $(this);
+  var per = $this.attr('per');
+  $this.css("width",per+'%');
+  $({animatedValue: 0}).animate({animatedValue: per},{
+    duration: 1000,
+    step: function(){
+      $this.attr('per', Math.floor(this.animatedValue) + '%');
+    },
+    complete: function(){
+      $this.attr('per', Math.floor(this.animatedValue) + '%');
+    }
+  });
+});
+</script>
+
+  <script>
+  		document.onreadystatechange = function() {
+  			if (document.readyState !== "complete") {
+  				document.querySelector(
+  				"body").style.visibility = "hidden";
+  				document.querySelector(
+  				".loader").style.visibility = "visible";
+  			} else {
+  				document.querySelector(
+  				".loader").style.display = "none";
+  				document.querySelector(
+  				"body").style.visibility = "visible";
+  			}
+  		};
+  	</script>
+
+</body>
+</html>
